@@ -217,32 +217,32 @@ main > div > a:hover {
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("CSS/01.png")
-      no-repeat 50% 50% / cover;
+    url("https://u.livechart.me/anime_visuals/local_version/10332/image/411c23ad9385f21fe141caa1f85d9ccb.webp/medium.jpg")
+      no-repeat 100% 100% / cover;
 }
 
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("CSS/02.png")
-      no-repeat 50% 50% / cover;
+    url("https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/8aa257503ef86474dffd0a518bb57d7a.jpe")
+      no-repeat 100% 100% / cover;
 }
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("CSS/03.png")
-      no-repeat 50% 50% / cover;
+    url("https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/f67a9d25f1a79891bd8cc9e68bf6021c.jpe")
+      no-repeat 100% 100% / cover;
 }
 
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("CSS/04.png")
-      no-repeat 50% 50% / cover;
+    url("https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/13d6e1ce564b2080bcc39f8ef1288690.jpg")
+      no-repeat 100% 100% / cover;
 }
 
 .swiper-slide--five {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("CSS/05.png")
-      no-repeat 50% 50% / cover;
+    url("https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpg")
+      no-repeat 100% 100% / cover;
       
 }
 
@@ -274,7 +274,7 @@ swiper-slide--aventura1 {
 .swiper-slide--aventura5 {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url("CSS/05.png")
-      no-repeat 50% 50% / cover;
+      no-repeat 100% 100% / cover;
       
 }
 
