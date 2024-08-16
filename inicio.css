@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weigth: 500;
+    margin-left: 40px;
+}
+
+.navbar .btnLogin-popup {
+    background: transparent;
+    border: none;    
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    margin-left: 0px;
+    transition: .5s;
+    font-size: 18px;
+    font-family: Roboto;
+    color: #f1683a;
+    font-weight: bold;
+}
+
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    botton: -6px;
+    width: 100%;
+    heigth: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: rigth;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+    
+}
+
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
+
+
+main {
+  position: relative;
+  width: calc(min(90rem, 90%));
+  margin: 0 auto;
+  min-height: 100vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem);
+}
+
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -12rem;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bg2 {
+  position: fixed;
+  bottom: -2rem;
+  right: -3rem;
+  z-index: -1;
+  width: 9.375rem;
+  opacity: 0;
+}
+
+main > div span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #717171;
+}
+
+main > div h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+  background-color: #005baa;
+  background: linear-gradient(to right, orange, red);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+main > div hr {
+  display: block;
+  background: linear-gradient(to right, orange, red);
+  height: 0.25rem;
+  width: 6.25rem;
+  border: none;
+  margin: 1.125rem 0 1.875rem 0;
+}
+
+main > div p {
+  line-height: 1.6;
+}
+
+main a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  background: linear-gradient(to right, orange, red);
+  border-radius: 3.125rem;
+  transition: 0.3s ease-in-out;
+}
+
+main > div > a {
+  border: 2px solid #c2c2c2;
+  margin-top: 2.188rem;
+  padding: 0.625rem 1.875rem;
+}
+
+main > div > a:hover {
+  border: 0.125rem solid #005baa;
+  color: #005baa;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 0px;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide h2 {
+  color: #f1683a;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+
+.swiper-slide p {
+  color: #dadada;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+  padding: 0.438em 1.875rem;
+  font-size: 0.9rem;
+}
+
+.swiper-slide a:hover {
+  color: #005baa;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/01.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/02.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/03.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/04.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/05.png")
+      no-repeat 50% 50% / cover;
+      
+}
+
+
+swiper-slide--aventura1 {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/323c82257b2f6567fabbb7bd55bfa753.jpg")
+      no-repeat 100% 100% / cover;
+}
+
+.swiper-slide--aventura2 {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/59dd9785564f46c3cf2a18b38149f5a1.jpe")
+      no-repeat 100% 100% / cover;
+}
+
+.swiper-slide--aventura3 {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/323c82257b2f6567fabbb7bd55bfa753.jpg")
+      no-repeat 100% 100% / cover;
+}
+
+.swiper-slide--aventura4 {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/eca729e2c2ae8ab45631c3bd11b81653.jpg")
+      no-repeat 100% 100% / cover;
+}
+
+.swiper-slide--aventura5 {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/05.png")
+      no-repeat 50% 50% / cover;
+      
+}
+
+swiper-slide--um {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/01.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--dois {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/02.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--tres {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/03.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--quatro {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/04.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--cinco {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("CSS/05.png")
+      no-repeat 50% 50% / cover;
+      
+}
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+  .bg,
+  .bg2 {
+    opacity: 0.1;
+  }
+}
+
+@media screen and (min-width: 93.75rem) {
+  .swiper {
+    width: 85%;
+  }
+
+
